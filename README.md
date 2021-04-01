@@ -7,6 +7,6 @@ This repository contains solutions to projects submitted in fulfillment of the r
 
 # List of Projects
 
-1. [Investigate a Dataset](projects/Investigate_a_dataset)
+1. [Investigate a Dataset](projects/Investigate_a_Dataset)
 2. [Analyze A/B Test Results]((projects/AB_Test))
 3. [Communicate Data Findings](projects/Communicate_data_findings)
