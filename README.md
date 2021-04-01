@@ -9,4 +9,4 @@ This repository contains solutions to projects submitted in fulfillment of the r
 
 1. [Investigate a Dataset](projects/Investigate_a_Dataset)
 2. [Analyze A/B Test Results](projects/AB_Test)
-3. [Communicate Data Findings](projects/Communicate_data_findings)
+3. [Communicate Data Findings "Loan Data"](projects/Communicate_data_findings)
