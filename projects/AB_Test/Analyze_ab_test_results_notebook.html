@@ -13997,6 +13997,13 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+$$P(\text{converted}) = 0.1196$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>b. Given that an individual was in the <code>control</code> group, what is the probability they converted?</p>
 
 </div>
@@ -14068,6 +14075,13 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$P(\text{converted}|\text{control}) = 0.1204$$
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -14147,6 +14161,13 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+$$P(\text{converted}|\text{treatment}) = 0.1189$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>d. What is the probability that an individual received the new page?</p>
 
 </div>
@@ -14188,6 +14209,13 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+$$P(\text{newpage}) = 0.5001$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>e. Consider your results from parts (a) through (d) above, and explain below whether you think there is sufficient evidence to conclude that the new treatment page leads to more conversions.</p>
 
 </div>
@@ -14196,7 +14224,17 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>new page is greater than old page a little bit</strong></p>
+<p><strong>Answer:</strong></p>
+<ol>
+<li>There is a slight difference between conversion rate of individuals in the <code>control</code> and <code>treatment</code> gropus. <code>control</code> group is higher than <code>treatment</code> group with a slight difference:<ol>
+<li>Given that an individual was in the <code>control</code> group, the probability that they converted is:
+$$P(\text{converted}|\text{control}) = 0.1204$$</li>
+<li>Given that an individual was in the treatment group, the probability that they converted is:
+$$P(\text{converted}|\text{treatment}) = 0.1189$$</li>
+</ol>
+</li>
+<li>There is no sufficient evidence that the new treatment page leads to more conversions.</li>
+</ol>
 
 </div>
 </div>
@@ -14216,7 +14254,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-$$H_0: p_{new} - p_{old} &lt;= 0 $$$$H_1: p_{new} - p_{old} &gt; 0 $$
+$$H_0: p_{new} - p_{old} \leq 0 $$$$H_1: p_{new} - p_{old} &gt; 0 $$
 </div>
 </div>
 </div>
@@ -14787,7 +14825,8 @@ $$H_0: p_{new} - p_{old} &lt;= 0 $$$$H_1: p_{new} - p_{old} &gt; 0 $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>we compute p-value and we found that it is greater than alpha (error rate) and in scientific studies this value called that we fail to reject null hypothesis and it is mean we choice null hypothesis to be true</strong></p>
+<p><strong>Answer:</strong></p>
+<p>we compute p-value and we found that it is greater than alpha (error rate) and in scientific studies this value called that we fail to reject null hypothesis and it is mean we choice null hypothesis to be true</p>
 
 </div>
 </div>
@@ -14871,7 +14910,8 @@ $$H_0: p_{new} - p_{old} &lt;= 0 $$$$H_1: p_{new} - p_{old} &gt; 0 $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>p-value mean that we fail to reject null hypothesis and I think they very close to findings in parts j. and k</strong></p>
+<p><strong>Answer:</strong></p>
+<p>p-value mean that we fail to reject null hypothesis and I think they very close to findings in parts j. and k</p>
 
 </div>
 </div>
@@ -14889,7 +14929,8 @@ $$H_0: p_{new} - p_{old} &lt;= 0 $$$$H_1: p_{new} - p_{old} &gt; 0 $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Logistic Regression</strong></p>
+<p><strong>Answer:</strong></p>
+<p>Since this is a <em>binary classification</em> problem, we use <em>logistic regression</em>.</p>
 
 </div>
 </div>
@@ -15142,7 +15183,8 @@ ab_page      -0.0150    0.0114    -1.3109  0.1899  -0.0374   0.0074
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>the p-value associated with ab_page is 0.1899 and it is different because null and alternative hypotheses in regression model help me to understand coef for each parameter but null and alternative hypotheses in Part II are two different choices i will recomend one of them</strong></p>
+<p><strong>Answer:</strong></p>
+<p>the p-value associated with ab_page is 0.1899 and it is different because null and alternative hypotheses in regression model help me to understand coef for each parameter but null and alternative hypotheses in Part II are two different choices i will recomend one of them</p>
 
 </div>
 </div>
@@ -15970,63 +16012,10 @@ CA_ab_page    -0.0469    0.0538   -0.8718  0.3833  -0.1523   0.0585
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[103]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">logit_mod</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">Logit</span><span class="p">(</span><span class="n">dff</span><span class="p">[</span><span class="s1">&#39;converted&#39;</span><span class="p">]</span> <span class="p">,</span> <span class="n">dff</span><span class="p">[[</span><span class="s1">&#39;intercept&#39;</span><span class="p">,</span><span class="s1">&#39;Uk_ab_page&#39;</span><span class="p">,</span><span class="s1">&#39;CA_ab_page&#39;</span><span class="p">]])</span>
-<span class="n">results</span> <span class="o">=</span><span class="n">logit_mod</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">summary2</span><span class="p">())</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Optimization terminated successfully.
-         Current function value: 0.366118
-         Iterations 6
-                          Results: Logit
-==================================================================
-Model:              Logit            No. Iterations:   6.0000     
-Dependent Variable: converted        Pseudo R-squared: 0.000      
-Date:               2020-12-17 19:01 AIC:              212782.0722
-No. Observations:   290584           BIC:              212813.8112
-Df Model:           2                Log-Likelihood:   -1.0639e+05
-Df Residuals:       290581           LL-Null:          -1.0639e+05
-Converged:          1.0000           Scale:            1.0000     
--------------------------------------------------------------------
-              Coef.   Std.Err.      z      P&gt;|z|    [0.025   0.975]
--------------------------------------------------------------------
-intercept    -2.0038    0.0079  -253.1933  0.0000  -2.0193  -1.9883
-Uk_ab_page    0.0116    0.0180     0.6429  0.5203  -0.0237   0.0468
-CA_ab_page    0.0173    0.0125     1.3881  0.1651  -0.0071   0.0417
-==================================================================
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>the company should  keep the old page</p>
-<p>I don't understand p-values in table for Logistic Regression</p>
 
 </div>
 </div>
