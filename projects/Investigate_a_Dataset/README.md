@@ -4,8 +4,7 @@
 In this project , This dataset collects information from 100k medical appointments in Brazil and is 
 focused on the question of whether or not patients show up for their appointment.
 
-**Question**
-
+## Question
 1.Are no-show appointments associated with a certain gender?
 2.Who in terms of age misses more appointments?
 3.Are chronic illnesses like hypertension and diabetes affecting patient's absences?
