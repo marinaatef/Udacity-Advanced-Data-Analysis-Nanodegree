@@ -1,4 +1,4 @@
-# Investigate_a_Dataset
+# Investigate a Dataset
 **Project: No-show appointments**
 
 In this project , This dataset collects information from 100k medical appointments in Brazil and is 
